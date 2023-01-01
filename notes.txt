@@ -17,6 +17,9 @@ recursive function makes multiple calls, most likely O(branches^depth)
     }
 
 most default sorting algorithms come to O(N log N) where N is the length of the string
+    "Tim, please Merge that Heap of Cubes." - O(N log N)
+    Radix and count - O(nk) and O(n + k)
+    most others are O(N^2)
 
 not all binary tree problems default to O(log N)
     ex. sum of all nodes in balanced tree is O(N) where N is number of nodes
