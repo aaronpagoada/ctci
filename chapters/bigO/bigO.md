@@ -5,7 +5,7 @@ lower, upper, and tight bound runtime == omega, o, and theta
 
 `O(n)` is `O(2n)` is `O(100n)`, drop the constant
 
-if problem halves number of elements each iteration, most likely `O(log N)`
+if problem halves number of elements each iteration, most likely `O(log n)`
 > ex. binary search
 
 recursive function makes multiple calls, most likely `O(branches^depth)`
