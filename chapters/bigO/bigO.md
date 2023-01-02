@@ -1,7 +1,7 @@
-========= BIG O =========
+# ========= BIG O =========
 
 lower, upper, and tight bound runtime == omega, o, and theta
-    Ω(N), O(N), and Θ(N)
+    `Ω(N), O(N), and Θ(N)`
 
 O(N) is O(2N) is O(100N), drop the constant
 
@@ -9,12 +9,14 @@ if problem halves number of elements each iteration, most likely O(log N)
     ex. binary search
 
 recursive function makes multiple calls, most likely O(branches^depth)
+    ```
     function fib(n){
         if(n <= 1){
             return 1
         }
         return fib(n - 1) + fib(n - 1)
     }
+    ```
 
 most default sorting algorithms come to O(N log N) where N is the length of the string
     "Tim, please Merge that Heap of Cubes." - O(N log N)
