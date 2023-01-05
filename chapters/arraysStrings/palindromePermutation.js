@@ -1,5 +1,5 @@
 // Palindrome Permutation
-// Given a string, write a function to check if it is a palindrome of a palindrome.
+// Given a string, write a function to check if it is a permutation of a palindrome.
 
 // if length is even, all letters need a pair
 // if length is odd, all letters but one need a pair
