@@ -28,3 +28,5 @@ function zeroMatrix(matrix){
 }
 
 console.log(zeroMatrix([[1,2,0],[4,5,6]]))
+// 0 0 0
+// 4 5 0
