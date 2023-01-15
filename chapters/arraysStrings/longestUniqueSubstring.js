@@ -6,7 +6,7 @@ function longestUniqueSubstring(s){
     return 0
   }
 
-if(s.length == 1){
+  if(s.length == 1){
     return 1
   }
 
