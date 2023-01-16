@@ -16,7 +16,7 @@ function returnKthToLast(head, k){
   let kthNode = null
   currentNode = head
 
-  while(count <= listSize - k && currentNode != null){
+  while(currentNode != null){
     if(count == listSize - k){
       kthNode = currentNode
       break
