@@ -56,6 +56,9 @@ const john = new Student("John", "Doe", "2023", "QF")
 aaron.introduce()
 john.sayMajor()
 
+// Create a shape class.
+// Then a square and triangle class that inherit from shape.
+
 class Shape {
   constructor(name, sides, sideLength){
     this.name = name
