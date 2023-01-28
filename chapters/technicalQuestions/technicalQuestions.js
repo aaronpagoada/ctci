@@ -46,7 +46,7 @@ class Student extends Person {
   }
 
   sayMajor(){
-    console.log(`I study ${this.major}.`)
+    console.log(`I'm ${this.firstName} and I study ${this.major}.`)
   }
 }
 
@@ -56,3 +56,34 @@ const john = new Student("John", "Doe", "2023", "QF")
 aaron.introduce()
 john.sayMajor()
 
+class Shape {
+  constructor(name, sides, sideLength){
+    this.name = name
+    this.sides = sides
+    this.sideLength = sideLength
+  }
+
+  calcPerimeter(){
+    return this.sideLength * this.sides
+  }
+}
+
+class Square extends Shape {
+  constructor(sideLength){
+    super('square', 4, sideLength)
+  }
+
+  calcArea(){
+    return this.sideLength * this.sideLength
+  }
+}
+
+class Triangle extends Shape {
+  constructor(sideLength){
+    super('triangle', 3, sideLength)
+  }
+}
+
+const triangle = new Triangle(9)
+
+console.log(triangle.calcPerimeter())
