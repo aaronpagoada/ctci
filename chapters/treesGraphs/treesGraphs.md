@@ -106,4 +106,68 @@ Post-order
 
 #### Tries (Prefix Trees)
 
+> A variant of an n-ary tree in which characters are stored at each node
+>
+> Can check if a string is a valid prefix in `O(K)` time, where `K` is the length of the string
+>
+> ```
+>          NULL
+>        /  |  \
+>       M   L   A
+>      / \   \   \
+>     A   Y   I   *
+>    /    |    \
+>   N     *     E
+>  / \           \
+> Y   *           *
+> |
+> *
+> ```
+
 ### Graph
+
+> A collection of nodes with edges between (some of) them
+>
+> Can be directed or undirected
+>
+> ```
+>    0 -> 1
+>         |
+>         v
+>   3 <-> 2
+> ```
+
+#### Graph Search
+
+```
+  0 -> 1 -> 2
+       |    |
+       v    v
+       4 -> 3   
+```
+
+Depth-first Search
+> Start at root and explore each branch completely before moving onto the next branch
+>
+> "Go deep, then wide."
+>
+> ```
+> Node 0
+>   Node 1
+>     Node 2
+>       Node 3
+>     Node 4
+> ```
+
+Breadth-first Search
+> Start at root and explore each neighbor before moving onto any children
+>
+> "Go wide, then deep."
+>
+> ```
+> Node 0
+>   Node 1
+>     Node 2
+>     Node 4
+>       Node 3
+> ```
